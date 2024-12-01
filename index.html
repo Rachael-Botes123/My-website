@@ -11,10 +11,11 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(45deg, rgb(245, 61, 162), rgb(255, 166, 0));
-            color: white;
+            background: linear-gradient(45deg, #f53da2, #ffa600);
+            color: #fff;
             text-align: center;
             min-height: 100vh;
+            line-height: 1.6;
         }
 
         h1, h2 {
@@ -23,12 +24,30 @@
             margin-top: 30px;
         }
 
+        h2 {
+            font-size: 2rem;
+            margin-top: 40px;
+            color: #ffd700;
+        }
+
         p, ul {
-            max-width: 900px;
-            margin: 0 auto 20px;
+            max-width: 1000px;
+            margin: 20px auto;
             text-align: left;
-            line-height: 1.6;
             font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .flag-image {
+            width: 280px;
+            height: auto;
+            margin: 30px auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .flag-image:hover {
+            transform: scale(1.05);
         }
 
         ul {
@@ -37,31 +56,25 @@
         }
 
         ul li {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-
-        .close-text {
-            line-height: 1.8;
-            max-width: 800px;
-            margin: 0 auto 20px;
-        }
-
-        .flag-image {
-            width: 250px;
-            height: auto;
-            margin: 20px auto;
-            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            line-height: 1.7;
         }
 
         footer {
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
-            padding: 20px;
+            padding: 15px 0;
             position: relative;
             bottom: 0;
             width: 100%;
             text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .close-text {
+            max-width: 800px;
+            margin: 0 auto 20px;
         }
 
         /* Responsive Design */
@@ -69,8 +82,17 @@
             h1 {
                 font-size: 2rem;
             }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
             p, ul {
                 font-size: 1rem;
+            }
+
+            .flag-image {
+                width: 200px;
             }
         }
     </style>
@@ -86,32 +108,34 @@
         <section>
             <h2>About Nigeria</h2>
             <p class="close-text">
-                Nigeria is an incredibly vibrant and dynamic country, renowned for its resilience, diversity, and remarkable cultural contributions. As the most populous nation in Africa, it boasts an extraordinary blend of over 250 ethnic groups, each with its unique traditions, languages, and customs. This diversity fosters a rich tapestry of music, art, and cuisine, with Nigerian genres like Afrobeat gaining global recognition and its cuisine, such as jollof rice and pounded yam, adored worldwide. Beyond culture, Nigeria’s young and entrepreneurial population is one of its greatest assets, driving innovation in technology, entertainment, and business. The Nigerian film industry, Nollywood, is the second-largest in the world, and Nigerian musicians and artists are making waves internationally. Despite facing challenges such as poverty and political instability, Nigerians are incredibly resourceful, with a strong sense of community and pride that empowers them to overcome adversity. Their passion, creativity, and determination truly make Nigeria a shining example of strength and potential in Africa and the world.
+                Nigeria is a vibrant and dynamic country, renowned for its resilience, diversity, and remarkable cultural contributions. As the most populous nation in Africa, it boasts over 250 ethnic groups, each with its unique traditions, languages, and customs. This cultural richness is reflected in the country’s music, art, and cuisine, with global recognition of Nigerian genres like Afrobeat, and its popular dishes, such as jollof rice and pounded yam.
+                <br><br>
+                Beyond its cultural wealth, Nigeria’s entrepreneurial population is one of its greatest assets. From technology to entertainment and business, Nigerians are at the forefront of innovation. Nollywood, Nigeria’s film industry, is the second-largest in the world, and Nigerian musicians and artists are making waves globally. Despite challenges like poverty and political instability, Nigerians are incredibly resilient, driven by a strong sense of community and national pride.
             </p>
         </section>
 
         <section>
             <h2>Nigeria's Origin</h2>
             <p class="close-text">
-                Nigeria's origin can be traced back to the ancient kingdoms and civilizations that existed in the region long before the modern nation was formed. Various ethnic groups, such as the Hausa, Yoruba, Igbo, Kanuri, and others, developed their own distinct cultures, societies, and kingdoms throughout history. Some of the most notable early kingdoms include the Nok culture (around 1000 BCE to 300 CE), which is known for its terracotta sculptures, and the great empires of Mali, Songhai, and the Hausa city-states in the northern region.
-                The modern nation of Nigeria emerged through the process of colonization by the British in the late 19th and early 20th centuries. In 1865, the British established a colony in Lagos, and in 1914, the British formally amalgamated the northern and southern protectorates and Lagos into one entity called the Colony and Protectorate of Nigeria. Nigeria gained independence from the United Kingdom on October 1, 1960, marking the birth of the modern Nigerian state.
-                The name "Nigeria" was coined by British journalist Flora Shaw in the late 19th century, derived from the Niger River, which flows through the country. The country’s rich history is shaped by its diverse ethnic groups, colonial experiences, and its quest for unity and development as a nation.
+                Nigeria's origins trace back to ancient kingdoms and civilizations, where ethnic groups like the Hausa, Yoruba, Igbo, and Kanuri thrived. The Nok culture, known for its terracotta sculptures, is one of the earliest examples of advanced civilizations in the region. Nigeria also played a role in the great empires of Mali, Songhai, and the Hausa city-states.
+                <br><br>
+                The modern nation of Nigeria emerged during British colonization in the late 19th and early 20th centuries, culminating in the formal amalgamation of northern and southern protectorates and Lagos in 1914. Nigeria gained independence from the UK on October 1, 1960, marking the birth of the modern Nigerian state. The name “Nigeria” was coined by British journalist Flora Shaw, derived from the Niger River.
             </p>
         </section>
 
         <section>
             <h2>Facts About Nigeria</h2>
             <ul>
-                <li>Most Populous Country in Africa: Nigeria has over 200 million people, making it the most populous country on the continent.</li>
-                <li>Capital: Abuja is the capital city of Nigeria, though Lagos is the largest city and economic hub.</li>
-                <li>Official Language: The official language is English, a legacy of British colonization.</li>
-                <li>Ethnic Diversity: Nigeria is home to over 250 ethnic groups, including the Hausa, Yoruba, and Igbo.</li>
-                <li>Nollywood: Nigeria has the second-largest film industry in the world, known as Nollywood, after Bollywood.</li>
-                <li>Oil Industry: Nigeria is one of the top oil producers in Africa and the world.</li>
-                <li>Democracy: Nigeria is a federal republic with a presidential system of government.</li>
-                <li>Religious Diversity: Nigeria is divided roughly between Muslims (mostly in the north) and Christians (mostly in the south), with indigenous beliefs also practiced.</li>
-                <li>Independence: Nigeria gained independence from the United Kingdom on October 1, 1960.</li>
-                <li>Largest Economy in Africa: Nigeria's economy is the largest in Africa, driven by oil, agriculture, and services.</li>
+                <li>Most Populous Country in Africa: Over 200 million people.</li>
+                <li>Capital: Abuja is the capital city, though Lagos is the largest city and economic hub.</li>
+                <li>Official Language: English, a legacy of British colonization.</li>
+                <li>Ethnic Diversity: Home to over 250 ethnic groups, including the Hausa, Yoruba, and Igbo.</li>
+                <li>Nollywood: The second-largest film industry in the world, after Bollywood.</li>
+                <li>Oil Industry: One of the top oil producers globally.</li>
+                <li>Democracy: A federal republic with a presidential system.</li>
+                <li>Religious Diversity: Roughly divided between Muslims (north), Christians (south), and indigenous beliefs.</li>
+                <li>Independence: Gained from the UK on October 1, 1960.</li>
+                <li>Largest Economy in Africa: Driven by oil, agriculture, and services.</li>
             </ul>
         </section>
     </main>
