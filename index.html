@@ -92,6 +92,23 @@
             border-radius: 8px;
         }
 
+        /* New Layout for Links */
+        .links-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .links-container a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .links-container a:hover {
+            text-decoration: underline;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
@@ -113,6 +130,11 @@
             iframe {
                 height: 300px;
             }
+
+            .links-container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -120,7 +142,7 @@
 
 <header>
     <h1>ALL ABOUT NIGERIA!</h1>
-    <img src="nigerian-flag.jpg" alt="Nigerian Flag" class="flag-image">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/1200px-Flag_of_Nigeria.svg.png" alt="Nigerian Flag" class="flag-image">
 </header>
 
 <main>
@@ -141,14 +163,21 @@
     </section>
 
     <section>
-        <h2>Learn More About Jamaica</h2>
-        <p>
-            <a href="https://en.wikipedia.org/wiki/Jamaica" target="_blank" style="color: #ffd700; text-decoration: none; font-size: 1.2rem;">
-                Click here to read more about Jamaica on Wikipedia!
-            </a>
-        </p>
+        <h2>Learn More About Jamaica and Nigeria</h2>
+        <div class="links-container">
+            <p>
+                <a href="https://en.wikipedia.org/wiki/Jamaica" target="_blank">
+                    Click here to read more about Jamaica on Wikipedia!
+                </a>
+            </p>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/Nigeria" target="_blank">
+                    Click here to read more about Nigeria on Wikipedia!
+                </a>
+            </p>
+        </div>
         <!-- Add the Jamaican flag image here -->
-        <img src="jamaican-flag.jpg" alt="Jamaican Flag" class="flag-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/1200px-Flag_of_Jamaica.svg.png" alt="Jamaican Flag" class="flag-image">
     </section>
 
     <section>
@@ -177,9 +206,17 @@
 </p>
 </td>
 <td width="50%">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/1200px-Flag_of_Nigeria.svg.png" width="50%">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/2560px-Flag_of_Jamaica.svg.png" width="50%">
 
 </td>
 </tr>
 </table> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/1200px-Flag_of_Jamaica.svg.png" width="50%">
+
+</p>
+</td>
+<td width="50%">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg" width="50%">
+
+</td>
+</tr>
+</table>
